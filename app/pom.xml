@@ -39,6 +39,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		<!-- jsp에서 사용할 수 있는 Spring Security 태그 -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-taglibs</artifactId>
@@ -68,6 +69,8 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- Spring Boot 내장 Tomcat은 Servlet/JSP 를 지원하지 않음 -->
 		<dependency>
        	<groupId>org.apache.tomcat.embed</groupId>
        		<artifactId>tomcat-embed-jasper</artifactId>
